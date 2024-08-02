@@ -1,3 +1,7 @@
+[TOC]
+
+
+
 # DDT simple motor test fitting board
 
 -   achieve control of all models of our prototype motors
@@ -46,21 +50,21 @@ you also can using the GCC build tool chain
 
 ![image-20240802140851133](README.assets/image-20240802140851133.png)
 
-# project compile development tips
+## project compile development tips
 
 This project se STM32CubeMX graphical configuration tool to configure peripherals and generate HAL library C language code，uses the KEIL5 MDK-ARM integrated development environment. Here are the tools I use. If your configuration is different from mine, it may cause build failures and errors
 
-## Keil arm compiler6
+### Keil arm compiler6
 
 KEIL5 arm compiler6 compiler compared to the V5 version greatly reduced the project compilation time
 
 So I configured the AC6 compiler in Keil MDK, you can learn about Keil v 6 compiler performance optimization and considerations
 
-## keil-build-viewer
+### keil-build-viewer
 
 This is an open source Keil build information display enhancement tool, please see https://gitee.com/DinoHaw/keil-build-viewer
 
-## Jlink Burn and debug
+### Jlink Burn and debug
 
 I use the Jlink debugger and use the SEGGER RTT  with the J-Link RTT Viewer software to print out the debug log, but you can use other debuggers as well, you just can't print a log using Segger RTT
 
